@@ -1,0 +1,94 @@
+
+.tab-content-container {
+  /* max-height: calc(100vh - 100px); Adjust the height as needed */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+  display:flex;
+  flex-direction: column;
+
+}
+
+/* Add styling for the active button */
+.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.home {
+  background-color: red;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  height: 200px;
+  width: 45%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-left: 80px;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.intro img {
+  /* Add styles for your profile picture */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  
+}
+
+/* For the first <p> element */
+.intro p:first-child {
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif; /* Use Roboto font */
+  font-weight: bold; /* Make text bold */
+  font-size: 30px; /* Adjust font size as needed */
+}
+
+/* For the second <p> element */
+.intro p:last-child {
+  font-family: Calibri, sans-serif; /* Use Calibri font */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.tabs {
+  /* margin-top: 30px; */
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  font-family: sans-serif;
+}
+.tabs button {
+  font-family: sans-serif;
+  background-color: white;
+  border: none;
+  position: relative;
+  color: #0077b6; /* White text */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Cursor on hover */
+  transition: 0.3s;
+  border-radius: 12px;
+}
+.tabs button.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Adjust thickness of underline */
+  text-underline-offset: 9px;
+}

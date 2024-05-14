@@ -1,0 +1,50 @@
+.work-experience {
+  padding:20px;
+    background-color: white;
+    color: #0077b6;
+    /* margin-bottom: 10px; */
+  }
+  
+  .work-experience h2 {
+    font-size: 22px;
+    color: black;
+
+  }
+  
+  .work-experience-content {
+    margin-top: 10px;
+    background-color: white;
+  }
+  
+  .experience-year {
+    padding:10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+    transition: border-style 0.3s;
+  }
+  .experience-year:hover{
+    border-color: grey;
+    border-style: dashed;
+  }
+  
+  .experience-year h3 {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .experience-details {
+    margin-top: 5px;
+    padding: 5px 10px;
+    color: black;
+
+  }
+  
+  .experience-details p {
+
+    margin: 0;
+    padding: 5px 0;
+  }
+  
