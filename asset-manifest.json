@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio-maibu/static/css/main.16a1abd6.css",
+    "main.js": "/Portfolio-maibu/static/js/main.e3636174.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio-maibu/static/js/453.1407b060.chunk.js",
+    "index.html": "/Portfolio-maibu/index.html",
+    "main.16a1abd6.css.map": "/Portfolio-maibu/static/css/main.16a1abd6.css.map",
+    "main.e3636174.js.map": "/Portfolio-maibu/static/js/main.e3636174.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio-maibu/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16a1abd6.css",
+    "static/js/main.e3636174.js"
+  ]
+}
