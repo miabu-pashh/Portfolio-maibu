@@ -7,6 +7,8 @@ import Contact from "./Contact";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("AboutMe");
+const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
+
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -25,8 +27,8 @@ function Home() {
   return (
     <div className="home">
       <div className="intro">
-        <img src="/maibu.jpg" alt="maibu" />
-        <div>
+        <img src={maibu} alt="maibu" />
+        <div className="intro-text">
           <p>Mahaboob Pasha Mohammad</p>
           <p>Masters in Software Engineering</p>
         </div>
@@ -60,11 +62,7 @@ function Home() {
           </button>
         </div>
 
-        <div className="tab-content">
-          {renderTabContent()}
-          </div>
-
-
+        <div className="tab-content">{renderTabContent()}</div>
       </div>
     </div>
   );

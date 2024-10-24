@@ -10,19 +10,23 @@ function Projects() {
       id: 1,
       title: 'E-Learning Platform',
       description: 'The E-learing platform is built with the Coursework Human Computer Interface. The project deals with the improvement of user Engagement by improving the UI/UX. The use of Multimedia Content for this Project is something which is very unique feature and could potentially increase the user engagement to complete the course.',
-      techStack: 'React, NodeJS, HTML & CSS'
+      techStack: 'React, NodeJS, HTML & CSS',
+      link: 'https://github.com/miabu-pashh/HCI_E-Learning.git'
+
     },
     {
       id: 2,
       title: 'Health web application',
       description: "A website is created to enhance the user to get doctors feedback and also the doctors recommendations of the diseases. This application uses the principles of the Software Development, Designed and tested to perfection. Team lead and responsible for the app development.",
-      techStack: 'Java, React, NodeJS, Postgres SQL'
+      techStack: 'Java, React, NodeJS, Postgres SQL',
+      link: 'https://github.com/miabu-pashh/Atom.git'
     },
     {
       id: 3,
       title: 'Chatbot & Dynamic Assistance',
       description: 'Created a chatbot and chat application For the Amount bank using React and Spring Boot. The chatBot enables the user to get the information regarding the information about the Company.Improves the user engagement of the application more. Responsible for full stack development and API calls.',
-      techStack: 'Advance Java, Angular, NodeJS, MySQL'
+      techStack: 'Advance Java, Angular, NodeJS, MySQL',
+      link: 'https://github.com/miabu-pashh/microservice.git'
     },
     {
       id: 4,
@@ -34,7 +38,8 @@ function Projects() {
       id: 5,
       title: 'eCommerce Website',
       description: 'Developed the e-commerce application using Advance Java. This application have been developed in Java, React, Angular, in many versions. The exit project as an intern wab able to develop this application.',
-      techStack: 'Advance Java, MySQL, React, Angular, Jenkins, Postman, Git, JIRA, '
+      techStack: 'Advance Java, MySQL, React, Angular, Jenkins, Postman, Git, JIRA',
+      link: 'https://github.com/miabu-pashh/AdvanceJava-Aassignment4.git'
     },
     // Add more project objects as needed
   ];
@@ -44,13 +49,18 @@ function Projects() {
   const handleProjectClick=(projectId)=>{
     console.log("Selected Project: ",projectId);
     setSelectedProject(projectId);
-  }
+    const selected=projects.find(project=>project.id===projectId);
+    if(selected && selected.link){
+      window.open(selected.link, '_blank');
+    }
+  };
   return (
     <div className='projects'>
     <h2>Projects</h2>
     <div className='project-container'>
       {/* Map over the projects array and render individual project cards */}
       {projects.map((project) => (
+
         <div className='project' key={project.id} onClick={() => handleProjectClick(project.id)}>
           {/* <Link onClick='/ProjectDetails'> */}
           <h3>{project.title}</h3>

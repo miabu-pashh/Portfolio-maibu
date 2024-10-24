@@ -7,8 +7,8 @@ function AboutMe() {
       <div className="about-section">
         <h2>About</h2>
         <p>
-          I am an enthusiastic and driven graduate student of software
-          engineering at Saint Louis University, deeply committed to advancing
+          I am an enthusiastic and driven graduate student of <strong>Software
+          Engineering</strong> at Saint Louis University, deeply committed to advancing
           my knowledge and skills in computer science. With a rigorous academic
           background, I am currently pursuing a Master of Science in Computer
           Software Engineering, immersing myself in diverse fields such as

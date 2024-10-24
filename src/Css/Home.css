@@ -1,94 +1,171 @@
-
-.tab-content-container {
-  /* max-height: calc(100vh - 100px); Adjust the height as needed */
-  overflow-y: auto; /* Add vertical scroll if content overflows */
-  display:flex;
-  flex-direction: column;
-
-}
-
-/* Add styling for the active button */
-.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
 .home {
-  background-color: red;
+  background-image: url("https://www.microsoft.com/en-us/research/wp-content/themes/microsoft-research-theme/images/admin/profiles/banners-03.png");
   min-height: 100vh;
   width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  /* padding: 1rem; */
 }
 
 .intro {
-  height: 200px;
-  width: 45%;
+
+  height: auto;
+  min-height: 200px;
+  width: 95%;
+  max-width: 35%;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 200px;
-  margin-left: 80px;
-  margin-right: auto;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  gap: 1.5rem;
+  /* margin: 1rem auto; */
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* border-radius: 10px; */
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  text-align: center;
+
+}
+
+@media (min-width: 640px) {
+  .intro {
+    flex-direction: row;
+    text-align: left;
+    width: 90%;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    width: 80%;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    width: 60%;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: auto;
+  }
 }
 
 .intro img {
-  /* Add styles for your profile picture */
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-left: 10px;
-  
+  border: 3px solid #f0f0f0;
 }
 
-/* For the first <p> element */
+@media (min-width: 640px) {
+  .intro img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.intro-text {
+  flex: 1;
+}
+
 .intro p:first-child {
-  margin-left: 20px;
-  font-family: "Roboto", sans-serif; /* Use Roboto font */
-  font-weight: bold; /* Make text bold */
-  font-size: 30px; /* Adjust font size as needed */
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* For the second <p> element */
+@media (min-width: 640px) {
+  .intro p:first-child {
+    font-size: 1.875rem;
+  }
+}
+
 .intro p:last-child {
-  font-family: Calibri, sans-serif; /* Use Calibri font */
-  font-size: 16px; /* Adjust font size as needed */
+  font-family: Calibri, sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+.tab-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .tabs {
-  /* margin-top: 30px; */
-  height: 50px;
-  width: 100%;
-  background-color: white;
   display: flex;
-  justify-content: left;
-  font-family: sans-serif;
-}
-.tabs button {
-  font-family: sans-serif;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   background-color: white;
-  border: none;
-  position: relative;
-  color: #0077b6; /* White text */
-  padding: 10px 20px; /* Padding */
-  text-align: center; /* Center text */
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  font-size: 15px;
-  margin: 4px 2px; /* Margin */
-  cursor: pointer; /* Cursor on hover */
-  transition: 0.3s;
-  border-radius: 12px;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: 1px solid #eee;
+  -webkit-overflow-scrolling: touch;
 }
+
+.tabs::-webkit-scrollbar {
+  height: 3px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+  background-color: #0077b6;
+  border-radius: 3px;
+}
+
+.tabs button {
+  flex: 0 0 auto;
+  font-family: sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #0077b6;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .tabs button {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.tabs button:hover {
+  background-color: #f0f7ff;
+}
+
 .tabs button.active {
-  text-decoration: underline;
-  text-decoration-thickness: 2px; /* Adjust thickness of underline */
-  text-underline-offset: 9px;
+  background-color: #0077b6;
+  color: white;
+}
+
+.tab-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .tab-content {
+    padding: 2rem;
+  }
 }

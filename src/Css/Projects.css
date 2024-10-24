@@ -24,11 +24,13 @@
     transition: margin 0.3s; 
     border-top: 10px solid transparent;
   }
+
   .project p{
     color:black;
   }
 
   .project:hover {
+    cursor: pointer;
     border-image: linear-gradient(to right, #007bff, #ff6f00, #ffcb00, #00c853, #6200ea); /* Gradient with multiple colors */
   border-image-slice: 0.5; /* Make the border slices equal */
 
