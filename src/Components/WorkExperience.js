@@ -18,7 +18,6 @@ function WorkExperience() {
     <div className="work-experience">
       <h2>Experience</h2>
       <div className="work-experience-content">
-        
         <div className="experience-year">
           <h3 onClick={() => toggleCollapse("2024")}>2024</h3>
           {!isCollapsed("2024") && (
@@ -38,10 +37,27 @@ function WorkExperience() {
                 <strong>Tech Stack:</strong> Html, Css, Javascript, React,
                 Wordpress.
               </p>
+
+              <hr />
+              <p>
+                <strong>Software Developer</strong>{" "}
+              </p>
+              <p>OPen Source-Saint Louis university</p>
+              <p>Aug 2024 - Dec 2024</p>
+              <p>St Louis, Missouri, United States</p>
+              <p>
+                Developed the website for B works, a non-profit organization.
+                The project includes teh development of a web application for
+                the ease of the donation and its tracking. The Tech Stack:
+                <br />
+                <br />
+                <strong>Tech Stack:</strong> React-Frontend, Nodejs-Backend,
+                MongoDB-Database. Wordpress.
+              </p>
             </div>
           )}
+       
         </div>
-        
 
         <div className="experience-year">
           <h3 onClick={() => toggleCollapse("2023")}>2023</h3>
@@ -154,13 +170,23 @@ function WorkExperience() {
                 React, Angular, MySQL, Jenkins, Postman, Git, AWS, Mendix
               </p>
 
-              <hr/>
+              <hr />
 
-              <p><strong>Software Engineer Intern, Nagarro</strong></p>
+              <p>
+                <strong>Software Engineer Intern, Nagarro</strong>
+              </p>
               <p>Aug 2021 - Nov 2021</p>
               <p>Haryana, India</p>
-              <ul>Received comprehensive training in Java technologies, with a focus on Spring Boot for backend APIs, and gained proficiency in front-end tools such as React, Node.js, and Angular.</ul>
-            <ul>Executed multiple projects during training, including CRUD applications and an exit application for a product catalogue shopping website.</ul>
+              <ul>
+                Received comprehensive training in Java technologies, with a
+                focus on Spring Boot for backend APIs, and gained proficiency in
+                front-end tools such as React, Node.js, and Angular.
+              </ul>
+              <ul>
+                Executed multiple projects during training, including CRUD
+                applications and an exit application for a product catalogue
+                shopping website.
+              </ul>
             </div>
           )}
         </div>
@@ -175,13 +201,23 @@ function WorkExperience() {
               <p> Nithya Industries</p>
               <p>Apr 2021 - Dec 2022</p>
               <p>Hyderabad, India</p>
-              <ul>- Collaborated on the design, manufacturing, and marketing of pipeline valves in a startup setting.</ul>
-              <ul>- Dual role as the company's design and marketing coordinator. Introduced a comprehensive marketing program to enhance client relationships</ul>
-                <ul>- Produced industry catalogues to support the company's offline marketing strategy and attract local and international customers.</ul>
+              <ul>
+                - Collaborated on the design, manufacturing, and marketing of
+                pipeline valves in a startup setting.
+              </ul>
+              <ul>
+                - Dual role as the company's design and marketing coordinator.
+                Introduced a comprehensive marketing program to enhance client
+                relationships
+              </ul>
+              <ul>
+                - Produced industry catalogues to support the company's offline
+                marketing strategy and attract local and international
+                customers.
+              </ul>
             </div>
           )}
         </div>
-
 
         {/* Add more years as needed */}
       </div>
