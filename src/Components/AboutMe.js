@@ -4,9 +4,8 @@ import { X, Download } from "lucide-react";
 import { useState } from "react";
 
 function AboutMe() {
-    const [showResume, setShowResume] = useState(false);
+  const [showResume, setShowResume] = useState(false);
 
-  
   return (
     // <div>
     <div className="about-section">
@@ -28,31 +27,35 @@ function AboutMe() {
         Show Resume
       </button>
       {showResume && (
-      <div className="modal-overlay">
-        <div className="modal-content">
-          <div className="modal-header">
-            <div className="modal-buttons">
-              <a href="/ResumeN.pdf" download className="download-button">
-                <Download size={18} />
-                Download PDF
-              </a>
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <div className="modal-header">
+              <div className="modal-buttons">
+                <a
+                  href="/MahaboobJavaResume.pdf"
+                  download
+                  className="download-button"
+                >
+                  <Download size={18} />
+                  Download PDF
+                </a>
+              </div>
+              <button
+                className="close-button"
+                onClick={() => setShowResume(false)}
+              >
+                <X size={24} />
+              </button>
             </div>
-            <button
-              className="close-button"
-              onClick={() => setShowResume(false)}
-            >
-              <X size={24} />
-            </button>
-          </div>
-          <div className="modal-body">
-            <iframe
-              src={process.env.PUBLIC_URL + "/ResumeN.pdf"}
-              className="resume-iframe"
-              title="Resume"
-            />
+            <div className="modal-body">
+              <iframe
+                src={process.env.PUBLIC_URL + "/MahaboobJavaResume.pdf"}
+                className="resume-iframe"
+                title="Resume"
+              />
+            </div>
           </div>
         </div>
-      </div>
       )}
     </div>
   );

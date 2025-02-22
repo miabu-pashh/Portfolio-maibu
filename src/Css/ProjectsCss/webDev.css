@@ -1,0 +1,49 @@
+.webprojects {
+  background-color: white;
+}
+
+.webproject-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+}
+.webproject {
+  /* flex: 1 1 calc(33.333% - 20px);
+
+  box-sizing: border-box;
+
+  overflow: hidden; */
+  position: relative;
+  height: 300px;
+  width: 300px;
+  color: #0077b6;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: margin 0.3s;
+  border-top: 10px solid transparent;
+}
+.webproject img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.webproject p {
+  color: black;
+}
+
+.webproject:hover {
+  cursor: pointer;
+  border-image: linear-gradient(
+    to right,
+    #007bff,
+    #ff6f00,
+    #ffcb00,
+    #00c853,
+    #6200ea
+  ); /* Gradient with multiple colors */
+  border-image-slice: 0.5; /* Make the border slices equal */
+}

@@ -1,18 +1,18 @@
-.projects {
+.mlprojects {
     background-color: white;
   }
-  .projects h2 {
+  .mlprojects h2 {
     padding: 20px;
     text-align: left;
     font-size: 22px;
     margin: 0; /* Remove margin for h2 within .projects container */
   }
   
-  .project-container {
+  .mlproject-container {
     display: flex;
     flex-wrap: wrap;
   }
-  .project{
+  .mlproject{
     position: relative;
     height: 300px;
     width: 300px;
@@ -25,11 +25,11 @@
     border-top: 10px solid transparent;
   }
 
-  .project p{
+  .mlproject p{
     color:black;
   }
 
-  .project:hover {
+  .mlproject:hover {
     cursor: pointer;
     border-image: linear-gradient(to right, #007bff, #ff6f00, #ffcb00, #00c853, #6200ea); /* Gradient with multiple colors */
     border-image-slice: 0.5; /* Make the border slices equal */

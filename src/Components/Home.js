@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
 import Contact from "./Contact";
+import ProjectDetails from "./ProjectDetails";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("AboutMe");
@@ -15,7 +16,8 @@ const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
       case "AboutMe":
         return <AboutMe />;
       case "Projects":
-        return <Projects />;
+        return <ProjectDetails />;
+        // return <Projects />;
       case "Experience":
         return <WorkExperience />;
       case "Contact":
@@ -25,6 +27,7 @@ const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
     }
   };
   return (
+    
     <div className="home">
       <div className="intro">
         <img src={maibu} alt="maibu" />

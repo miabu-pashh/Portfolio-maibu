@@ -1,5 +1,5 @@
 .home {
-  background-image: url("https://www.microsoft.com/en-us/research/wp-content/themes/microsoft-research-theme/images/admin/profiles/banners-03.png");
+  background: url("https://www.microsoft.com/en-us/research/wp-content/themes/microsoft-research-theme/images/admin/profiles/banners-03.png");
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -11,88 +11,102 @@
 }
 
 .intro {
-
-  height: auto;
-  min-height: 200px;
-  width: 95%;
-  max-width: 35%;
-  background-color: white;
+  width: 90%;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  /* margin: 1rem auto; */
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* border-radius: 10px; */
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  gap: 1rem;
   text-align: center;
+  transition: all 0.3s ease;
+}
 
+.intro:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5px);
+}
+
+.intro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.intro img:hover {
+  transform: scale(1.05);
+}
+
+.intro-text {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.intro p:first-child {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.intro p:last-child {
+  font-family: "Calibri", sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
 }
 
 @media (min-width: 640px) {
   .intro {
     flex-direction: row;
     text-align: left;
-    width: 90%;
+    width: 50%;
     justify-content: space-between;
     padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .intro img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .intro p:first-child {
+    font-size: 1.75rem;
+  }
+
+  .intro p:last-child {
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) {
   .intro {
-    width: 80%;
-    margin-top: 3rem;
+    width: 75%;
+    margin-top: 2rem;
+    padding: 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .intro {
-    width: 60%;
-    margin-top: 4rem;
+    width: 40%;
+    margin-top: 3rem;
     margin-left: 5rem;
     margin-right: auto;
   }
-}
 
-.intro img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #f0f0f0;
-}
-
-@media (min-width: 640px) {
   .intro img {
     width: 150px;
     height: 150px;
   }
-}
-
-.intro-text {
-  flex: 1;
-}
-
-.intro p:first-child {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-@media (min-width: 640px) {
-  .intro p:first-child {
-    font-size: 1.875rem;
-  }
-}
-
-.intro p:last-child {
-  font-family: Calibri, sans-serif;
-  font-size: 1rem;
-  color: #666;
 }
 
 .tab-content-container {
@@ -145,7 +159,7 @@
 @media (min-width: 640px) {
   .tabs button {
     font-size: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -160,12 +174,12 @@
 
 .tab-content {
   flex: 1;
-  padding: 1.5rem;
+  padding: 0.4rem;
   overflow-y: auto;
 }
 
 @media (min-width: 768px) {
   .tab-content {
-    padding: 2rem;
+    padding: 1rem;
   }
 }

@@ -1,0 +1,64 @@
+.project-details {
+  font-family: Arial, sans-serif;
+}
+
+.ptabs {
+  display: flex;
+  border-bottom: 2px;
+  width: 50%;
+  height: 10%;
+
+}
+.ptab {
+  padding: 10px 20px;
+  width:40%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+   border-bottom: 5px solid transparent;
+  /* color: #555; */
+}
+
+.ptab.active {
+cursor: pointer;
+border-image: linear-gradient(to right, #007bff, #ff6f00, #ffcb00, #00c853, #6200ea); /* Gradient with multiple colors */
+border-image-slice: 0.5; /* Make the border slices equal */
+
+}
+
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+
+.pcard {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.pcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.pcontainer {
+  padding: 2px 16px;
+}
