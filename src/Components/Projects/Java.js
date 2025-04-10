@@ -34,7 +34,7 @@ export default function Java() {
   };
   return (
     <div>
-      <h1>This is java projects components</h1>
+      {/* <h1>This is java projects components</h1> */}
 
       <div className="javaprojects">
         <h2>Projects</h2>

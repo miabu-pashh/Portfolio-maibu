@@ -23,7 +23,7 @@ function AboutMe() {
       </p>
       <p></p>
       <br></br>
-      <button className="resume-button" onClick={() => setShowResume(true)}>
+      {/* <button className="resume-button" onClick={() => setShowResume(true)}>
         Show Resume
       </button>
       {showResume && (
@@ -56,7 +56,7 @@ function AboutMe() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

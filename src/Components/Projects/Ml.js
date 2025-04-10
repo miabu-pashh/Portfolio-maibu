@@ -59,7 +59,7 @@ export default function Ml() {
   };
   return (
     <div>
-      <h1>This is ML proejcts components</h1>
+      {/* <h1>This is ML proejcts components</h1> */}
       <div className="mlprojects">
         <h2>Projects</h2>
         <div className="mlproject-container">
