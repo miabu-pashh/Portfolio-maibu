@@ -16,13 +16,15 @@
   background-color: #fff;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 0.5rem;
+  /* background: url("https://www.microsoft.com/en-us/research/wp-content/themes/microsoft-research-theme/images/admin/profiles/banners-03.png"); */
+  /* border-radius: 0.5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   text-align: center;
   transition: all 0.3s ease;
+  color: #eee;
 }
 
 .intro:hover {
@@ -70,7 +72,9 @@
     width: 50%;
     justify-content: space-between;
     padding: 2rem;
+    border-radius: 0.5rem;
     margin: 0 auto;
+    background-color: #fff;
   }
 
   .intro img {
@@ -92,6 +96,7 @@
     width: 75%;
     margin-top: 2rem;
     padding: 2.5rem;
+    border-radius: 0.5rem;
   }
 }
 
@@ -101,11 +106,40 @@
     margin-top: 3rem;
     margin-left: 5rem;
     margin-right: auto;
+    background-color: #fff;
   }
 
   .intro img {
     width: 150px;
     height: 150px;
+  }
+}
+/* Mobile Styles */
+@media (max-width: 639px) {
+  .intro {
+    flex-direction: row; /* Stack content vertically */
+    text-align: center;
+    width: 80%; /* Full width with padding */
+    /* justify-content: center; */
+    /* padding: 1rem; */
+    /* border-radius: 0.5rem; */
+    margin: 1rem;
+    background-color: #fff;
+  }
+
+  .intro img {
+    width: 100px; /* Smaller image size for mobile */
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .intro p:first-child {
+    font-size: 1.5rem; /* Slightly smaller heading */
+    margin-bottom: 0.5rem;
+  }
+
+  .intro p:last-child {
+    font-size: 0.875rem; /* Adjusted for readability */
   }
 }
 
@@ -116,9 +150,8 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
   overflow: hidden;
+  background-color: white;
 }
 
 .tabs {
@@ -126,20 +159,25 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   background-color: white;
-  padding: 0.5rem;
-  gap: 0.5rem;
+  padding: 0.3rem;
+  gap: 0.1rem;
   border-bottom: 1px solid #eee;
   -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 639px) {
+  .tabs {
+    gap: 0.1rem;
+  }
 }
 
 .tabs::-webkit-scrollbar {
   height: 3px;
 }
 
-.tabs::-webkit-scrollbar-thumb {
+/* .tabs::-webkit-scrollbar-thumb {
   background-color: #0077b6;
   border-radius: 3px;
-}
+} */
 
 .tabs button {
   flex: 0 0 auto;
@@ -164,7 +202,7 @@
 }
 
 .tabs button:hover {
-  background-color: #f0f7ff;
+  background-color: white;
 }
 
 .tabs button.active {

@@ -8,8 +8,7 @@ import ProjectDetails from "./ProjectDetails";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("AboutMe");
-const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
-
+  const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -17,7 +16,7 @@ const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
         return <AboutMe />;
       case "Projects":
         return <ProjectDetails />;
-        // return <Projects />;
+      // return <Projects />;
       case "Experience":
         return <WorkExperience />;
       case "Contact":
@@ -27,7 +26,6 @@ const maibu = process.env.PUBLIC_URL + "/maibu.jpg";
     }
   };
   return (
-    
     <div className="home">
       <div className="intro">
         <img src={maibu} alt="maibu" />

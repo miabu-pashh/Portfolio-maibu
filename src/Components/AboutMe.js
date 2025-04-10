@@ -32,7 +32,7 @@ function AboutMe() {
             <div className="modal-header">
               <div className="modal-buttons">
                 <a
-                  href="/MahaboobJavaResume.pdf"
+                  href="/MahaboobPashResume.pdf"
                   download
                   className="download-button"
                 >
@@ -49,7 +49,7 @@ function AboutMe() {
             </div>
             <div className="modal-body">
               <iframe
-                src={process.env.PUBLIC_URL + "/MahaboobJavaResume.pdf"}
+                src={process.env.PUBLIC_URL + "/MahabooPashResume.pdf"}
                 className="resume-iframe"
                 title="Resume"
               />

@@ -1,42 +1,69 @@
 .footer {
-    background-color: #ced4da; /* Dark background color */
-    color: #fff; /* White text color */
-    display: flex; /* Use flexbox layout */
-    flex-wrap: wrap; /* Wrap items if they exceed the width */
-    
-  }
-  
-  .right-div {
-    font-family: sans-serif; 
-    flex: 1; /* Grow to fill available space */
-    background-color: #ced4da; /* Dark background color */
-    color: black; /* White text color */
-    padding: 20px; /* Add some padding */
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  flex: row;
+  justify-content: center; /* Center the content */
+  align-items: flex-start;
+  background-color: #ced4da;
+  padding: 40px;
+  gap: 10px; /* Space between left and right divs */
+  flex-wrap: wrap;
+}
+
+.right-div,
+.left-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-div-content,
+.left-div-content {
+  text-align: left;
+  width: 100%;
+  max-width: 350px;
+}
+
+.right-div-content a {
+  display: block;
+  color: black; /* Link color */
+  text-decoration: underline;
+  margin: 15px 0;
+  color: #0078d7; /* Link color */
+}
+
+.footer p strong {
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+}
+/* Icon Styling */
+.right-div-content a svg,
+.left-div-content a svg {
+  color: black; /* Icons are black */
+  margin-right: 5px; /* Space between icon and text */
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .footer {
     flex-direction: column;
-    /* margin-left: 30px; */
+    align-items: center;
+    text-align: center;
   }
-  .right-div > * {
-    margin-bottom: 20px; /* Add margin below each item */
-  }
-  
+
+  .right-div,
   .left-div {
-    font-family: sans-serif; 
-    
-    flex: 1; /* Grow to fill available space */
-    background-color: #ced4da; /* Dark background color */
-    color: black; /* White text color */
-    padding: 20px; /* Add some padding */
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    /* margin-left: 30px; */
-  }
-  
-  .bottom-div {
-    height: 100px;
     width: 100%;
-    background-color: black;
+    justify-content: center;
+    margin-bottom: 20px;
   }
-  
+  .right-div-content,
+  .left-div-content {
+    text-align: center;
+    width: 95%;
+  }
+  .right-div-content a {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
