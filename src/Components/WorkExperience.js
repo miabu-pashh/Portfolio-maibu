@@ -26,7 +26,7 @@ function WorkExperience() {
               <p>
                 <strong>Java Full Stack Developer</strong>
               </p>
-              <p>CVS Health, USA</p>
+              <p>Metlife, USA</p>
               <p>Aug 2024 - Present</p>
               <ul>
                 <li>
