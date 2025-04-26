@@ -5,6 +5,8 @@
   align-items: flex-start;
   background-color: #e2b7ff;
   padding: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
   gap: 10px; /* Space between left and right divs */
   flex-wrap: wrap;
 }
