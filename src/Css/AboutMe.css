@@ -21,11 +21,15 @@
 }
 
 .about-text {
+  font-family: cursive;
   font-size: 1rem;
   /* margin-bottom: 2rem; */
   line-height: 1.7;
   padding: 0 10px;
   color: white;
+}
+.about-text strong {
+  color: #e2b7ff;
 }
 
 .info-cards {
@@ -49,7 +53,7 @@
 .info-card h3 {
   text-align: center;
   /* color: #b29eff; */
-  color: white;
+  color: black;
   margin-bottom: 1rem;
 }
 

@@ -9,11 +9,16 @@ function AboutMe() {
 
       <p className="about-text">
         Hello! I'm Mahaboob Pasha Mohammad, a passionate graduate student of{" "}
-        <strong>Software Engineering</strong> at Saint Louis University. I'm
-        currently pursuing a Master's degree and have immersed myself in areas
-        like Principles of Software Development, Data Structures, Machine
-        Learning, AI, and HCI — all fueling my passion for cutting-edge tech and
-        innovation.
+        <strong>Software Engineering</strong> at Saint Louis University. I
+        graduated with a Master's degree and have immersed myself in areas like
+        <strong>
+          {" "}
+          Principles of Software Development, Data Structures, Machine Learning,
+          AI, and HCI {""}
+        </strong>
+        — all fueling my passion for cutting-edge tech and innovation. When I'm
+        not coding, you'll find me pioneering tech workshops and leading
+        innovative projects with the help of <strong>AI</strong>.
       </p>
 
       <div className="info-cards">
