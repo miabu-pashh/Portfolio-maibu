@@ -3,7 +3,7 @@
   flex: row;
   justify-content: center; /* Center the content */
   align-items: flex-start;
-  background-color: #ced4da;
+  background-color: #e2b7ff;
   padding: 40px;
   gap: 10px; /* Space between left and right divs */
   flex-wrap: wrap;

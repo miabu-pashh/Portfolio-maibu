@@ -1,62 +1,40 @@
 import React from "react";
 import "../Css/AboutMe.css";
-import { X, Download } from "lucide-react";
-import { useState } from "react";
 
 function AboutMe() {
-  const [showResume, setShowResume] = useState(false);
-
   return (
-    // <div>
-    <div className="about-section">
-      <h2>About</h2>
-      <p>
-        I am an enthusiastic and driven graduate student of{" "}
-        <strong>Software Engineering</strong> at Saint Louis University, deeply
-        committed to advancing my knowledge and skills in computer science. With
-        a rigorous academic background, I am currently pursuing a Master of
-        Science in Computer Software Engineering, immersing myself in diverse
-        fields such as Principles of Software Development, Data Structures
-        Algorithms, Machine Learning, Artificial Intelligence, and
-        Human-Computer Interaction, all of which fuel my passion for
-        cutting-edge technologies and innovation.
+    <div className="about-me-container">
+      <p className="section-subtitle">Get To Know</p>
+      <h2 className="section-title">About Me</h2>
+
+      <p className="about-text">
+        Hello! I'm Mahaboob Pasha Mohammad, a passionate graduate student of{" "}
+        <strong>Software Engineering</strong> at Saint Louis University. I'm
+        currently pursuing a Master's degree and have immersed myself in areas
+        like Principles of Software Development, Data Structures, Machine
+        Learning, AI, and HCI — all fueling my passion for cutting-edge tech and
+        innovation.
       </p>
-      <p></p>
-      <br></br>
-      {/* <button className="resume-button" onClick={() => setShowResume(true)}>
-        Show Resume
-      </button>
-      {showResume && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <div className="modal-header">
-              <div className="modal-buttons">
-                <a
-                  href="/MahaboobPashResume.pdf"
-                  download
-                  className="download-button"
-                >
-                  <Download size={18} />
-                  Download PDF
-                </a>
-              </div>
-              <button
-                className="close-button"
-                onClick={() => setShowResume(false)}
-              >
-                <X size={24} />
-              </button>
-            </div>
-            <div className="modal-body">
-              <iframe
-                src={process.env.PUBLIC_URL + "/MahabooPashResume.pdf"}
-                className="resume-iframe"
-                title="Resume"
-              />
-            </div>
-          </div>
+
+      <div className="info-cards">
+        <div className="info-card">
+          <h3>🎓 Education</h3>
+          <p>
+            <strong>Software Engineering</strong>
+          </p>
+          <p>Saint Louis University</p>
+          <p>Dec 2024</p>
+          <p>GPA: 3.92/4.0</p>
         </div>
-      )} */}
+
+        <div className="info-card">
+          <h3>🛠️ Skills</h3>
+          <p>Full-Stack Development</p>
+          <p>Machine Learning & AI</p>
+          <p>Software Engineering Principles</p>
+          <p>Cloud & DevOps</p>
+        </div>
+      </div>
     </div>
   );
 }
