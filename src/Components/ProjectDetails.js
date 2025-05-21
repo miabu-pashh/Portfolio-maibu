@@ -65,6 +65,13 @@ import "../Css/ProjectDetails.css";
 
 const projects = [
   {
+    title: "Resume Builder",
+    image:
+      "https://storage.googleapis.com/joblist-content/hero-images/22-Pro-Resume-Writer.png",
+    github: "https://github.com/miabu-pashh/ResuMe.git",
+    demo: "https://drive.google.com/file/d/1WgHEMB3ZPIptZoRsPLhPoJNDBEkfB4cb/view?usp=sharing",
+  },
+  {
     title: "E-Learning Platform",
     image:
       "https://axiomq.com/wp-content/uploads/2020/09/eLearning-featured.jpg",
@@ -115,13 +122,6 @@ const projects = [
     title: "MATERIAL DONOR MUTUAL ASSIST",
     image:
       "https://donatestuff.com/wp-content/uploads/2023/01/donate-clothes-compressor.jpeg",
-    github: "https://github.com/miabu-pashh/resume-builder",
-    demo: "https://resume-builder-demo.com",
-  },
-  {
-    title: "Resume Builder",
-    image:
-      "https://storage.googleapis.com/joblist-content/hero-images/22-Pro-Resume-Writer.png",
     github: "https://github.com/miabu-pashh/resume-builder",
     demo: "https://resume-builder-demo.com",
   },
