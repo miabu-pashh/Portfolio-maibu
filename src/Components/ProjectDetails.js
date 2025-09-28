@@ -1,80 +1,37 @@
-// import React, { useState } from "react";
-// import "../Css/ProjectDetails.css";
-// import Java from "./Projects/Java";
-// import Ml from "./Projects/Ml";
-// import Webdev from "./Projects/Webdev";
-
-// function ProjectDetails() {
-//   const [activeTab, setActiveTab] = useState("AI/Machine Learning");
-
-//   const categories = {
-//     "AI/Machine Learning": [
-//       "Pacman Project",
-//       "Hugging Face Model",
-//       "Resume Builder",
-//     ],
-//     "MERN Stack": [
-//       "Material Donor Mutual Assist",
-//       "Budget Application",
-//       "E-Learning Platform",
-//       "Bus-route Planner",
-//       "Health Web Application",
-//       "JavaScript Animations Projects",
-//     ],
-//     "Angular-Java Stack": [
-//       "Dynamic Assisting Chatbot",
-//       "eCommerce Applications",
-//       "Mendix Applications",
-//       "CRUD Applications",
-//     ],
-//   };
-
-//   return (
-//     <div className="project-details">
-//       <div className="ptabs">
-//         {Object.keys(categories).map((category) => (
-//           <div
-//             key={category}
-//             className={`ptab ${activeTab === category ? "active" : ""}`}
-//             onClick={() => setActiveTab(category)}
-//           >
-//             {category}
-//           </div>
-//         ))}
-//       </div>
-//       {/* <div className="content">
-//         <h2>{activeTab} Projects</h2>
-//         <ul>
-//           {categories[activeTab].map((project, index) => (
-//             <li key={index}>{project}</li>
-//           ))}
-//         </ul>
-//       </div> */}
-
-//       {activeTab === "Angular-Java Stack" && <Java />}
-//       {activeTab === "AI/Machine Learning" && <Ml />}
-//       {activeTab === "MERN Stack" && <Webdev />}
-//     </div>
-//   );
-// }
-
-// export default ProjectDetails;
-
 import React from "react";
 import "../Css/ProjectDetails.css";
+import { useNavigate } from "react-router-dom";
+import ResumeBuilder from "../Photos/ResumeBuilderThumbnail.png";
+import eLearning2 from "../Photos/eLearning2.png";
+import digiresume from "../Photos/digiresume.jpeg";
+import studentcrm from "../Photos/StudentCRMDashboard.png";
 
 const projects = [
   {
-    title: "Resume Builder",
-    image:
-      "https://storage.googleapis.com/joblist-content/hero-images/22-Pro-Resume-Writer.png",
+    title: "Student Dashboard CRM System",
+    image: studentcrm,
+    // "https://storage.googleapis.com/joblist-content/hero-images/22-Pro-Resume-Writer.png",
+    github: "https://github.com/miabu-pashh/student-crm-dashboard",
+    demo: "https://digiresume.netlify.app/",
+  },
+  {
+    title: "Digital Resume",
+    image: digiresume,
+    // "https://storage.googleapis.com/joblist-content/hero-images/22-Pro-Resume-Writer.png",
+    github: "https://github.com/miabu-pashh/DigiResume.git",
+    demo: "https://digiresume.netlify.app/",
+  },
+  {
+    title: "AI Resume Builder",
+    image: ResumeBuilder,
+    // "https://storage.googleapis.com/joblist-content/hero-images/22-Pro-Resume-Writer.png",
     github: "https://github.com/miabu-pashh/ResuMe.git",
-    demo: "https://drive.google.com/file/d/1WgHEMB3ZPIptZoRsPLhPoJNDBEkfB4cb/view?usp=sharing",
+    demo: "https://www.loom.com/share/756c0bc410254ab0921f8487e8aed5f8?sid=b0ce060d-e15c-4d94-87ad-fe750851aace",
   },
   {
     title: "E-Learning Platform",
-    image:
-      "https://axiomq.com/wp-content/uploads/2020/09/eLearning-featured.jpg",
+    image: eLearning2,
+    // "https://axiomq.com/wp-content/uploads/2020/09/eLearning-featured.jpg",
     github: "https://github.com/miabu-pashh/eLearning",
     demo: "https://drive.google.com/file/d/1WbnBzFdK2bKUAkCB8so-9115fH1qJQsC/view?usp=drive_link",
   },
@@ -130,21 +87,54 @@ const projects = [
 ];
 
 function ProjectDetails() {
+  const titleToRouteMap = {
+    "Student Dashboard CRM System": "student-crm-dashboard",
+    "Digital Resume": "digital-resume",
+    "AI Resume Builder": "resume-builder",
+    "E-Learning Platform": "e-learning-platform",
+    "Health Web Application": "health-app",
+    "Budjet Application": "budget-app",
+    "PACMAN Project": "pacman",
+    "CLIPBOARD SYNC APPLICATION": "clipboard-sync",
+    "EMAIL SORTER APPLICATION": "email-sorter",
+    "RESEARCH PAPER OVERVIEW": "research-paper",
+    "MATERIAL DONOR MUTUAL ASSIST": "material-donor",
+  };
+  const navigate = useNavigate();
+
+  const handleCardClick = (project) => {
+    const path = titleToRouteMap[project.title];
+    if (path) {
+      navigate(`/${path}`, {
+        state: { project },
+      });
+    }
+
+    // navigate(`/${encodeURIComponent(project.title)}`, {
+    //   state: { project },
+    // });
+  };
   return (
     <div className="project-details-section">
       <h2 className="section-title">My Recent Projects</h2>
-      <p className="section-subtitle">Portfolio</p>
+      {/* <p className="section-subtitle">Portfolio</p> */}
       <div className="project-cards-container">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div
+            className="project-card"
+            key={index}
+            onClick={() => handleCardClick(project)}
+            style={{ cursor: "pointer" }}
+          >
+            <h3>{project.title}</h3>
             <img
               src={project.image}
               alt={project.title}
               className="project-image"
             />
-            <h3>{project.title}</h3>
+
             <div className="project-buttons">
-              <a
+              {/* <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -158,7 +148,8 @@ function ProjectDetails() {
                 className="live-demo"
               >
                 Live Demo
-              </a>
+              </a> */}
+              <a>PROJECT DETAILS</a>
             </div>
           </div>
         ))}

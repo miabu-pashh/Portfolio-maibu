@@ -1,24 +1,3 @@
-// import React from "react";
-// import "../Css/Contact.css";
-
-// function Contact() {
-//   return (
-//     <div className="contact-me">
-
-//         <div className="contact">
-//         <a href="mailto:mahaboobpasha.mohammad@slu.edu" class="fa fa-google"></a>
-
-//         <a href="https://www.linkedin.com/in/mohammad-mahaboob-pasha/" class="fa fa-linkedin"></a>
-
-//         <a href="https://github.com/miabu-pashh" class="fa fa-github"></a>
-//       </div>
-
-//     </div>
-//   );
-// }
-
-// export default Contact;
-
 import React from "react";
 import "../Css/Contact.css";
 import { FaEnvelope, FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";

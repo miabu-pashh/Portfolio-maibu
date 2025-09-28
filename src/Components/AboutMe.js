@@ -29,7 +29,7 @@ function AboutMe() {
           </p>
           <p>Saint Louis University</p>
           <p>Dec 2024</p>
-          <p>GPA: 3.92/4.0</p>
+          <p>GPA: 3.9/4.0</p>
         </div>
 
         <div className="info-card">

@@ -38,8 +38,8 @@ function Footer() {
           <p>
             <strong>Address</strong>
           </p>
-          <p>3615, Olive Street,Apt 1405</p>
-          <p> Saint Louis, MO, 63108</p>
+          <p>117 Holleman Dr W Apt 2201 C</p>
+          <p> College Station, TX 77840</p>
         </div>
       </div>
     </footer>

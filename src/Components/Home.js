@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import "../Css/Home.css";
 import AboutMe from "./AboutMe";
-import Projects from "./Projects";
+import Projects from "./Project";
 import WorkExperience from "./WorkExperience";
 import Contact from "./Contact";
 import ProjectDetails from "./ProjectDetails";
+import ResumeBuilder from "./Projects/ResumeBuilder";
+import ElearningPlatform from "./Projects/ELearningPlatform"; // ADD
+import DigitalResume from "./Projects/DigitalResume"; // ADD
+import StudentCRMDashboard from "./Projects/StudentCRMDashboard"; // ADD
+
+import { MemoryRouter, Routes, Route } from "react-router-dom"; // ADD
 
 function Home() {
   const [activeTab, setActiveTab] = useState("AboutMe");
@@ -15,8 +21,23 @@ function Home() {
       case "AboutMe":
         return <AboutMe />;
       case "Projects":
-        return <ProjectDetails />;
-      // return <Projects />;
+        return (
+          <MemoryRouter>
+            <Routes>
+              <Route path="/" element={<ProjectDetails />} />
+              <Route path="/resume-builder" element={<ResumeBuilder />} />
+              <Route
+                path="/e-learning-platform"
+                element={<ElearningPlatform />}
+              />
+              <Route path="/digital-resume" element={<DigitalResume />} />
+              <Route
+                path="/student-crm-dashboard"
+                element={<StudentCRMDashboard />}
+              />
+            </Routes>
+          </MemoryRouter>
+        );
       case "Experience":
         return <WorkExperience />;
       case "Contact":
