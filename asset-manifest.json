@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-maibu/static/css/main.f899b327.css",
-    "main.js": "/Portfolio-maibu/static/js/main.f07dbca6.js",
+    "main.css": "/Portfolio-maibu/static/css/main.525e5ca0.css",
+    "main.js": "/Portfolio-maibu/static/js/main.96445af8.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio-maibu/static/js/453.1407b060.chunk.js",
     "static/media/ResumeBuilderThumbnail.png": "/Portfolio-maibu/static/media/ResumeBuilderThumbnail.acf3cb804dc4608bb7e5.png",
     "static/media/ArchELearning.png": "/Portfolio-maibu/static/media/ArchELearning.2501a55a7112c274ea73.png",
@@ -11,12 +11,12 @@
     "static/media/StudentCRMDashboard.png": "/Portfolio-maibu/static/media/StudentCRMDashboard.4a38a31300648752ad48.png",
     "static/media/digiresume.jpeg": "/Portfolio-maibu/static/media/digiresume.f77c597a9e9687807c68.jpeg",
     "index.html": "/Portfolio-maibu/index.html",
-    "main.f899b327.css.map": "/Portfolio-maibu/static/css/main.f899b327.css.map",
-    "main.f07dbca6.js.map": "/Portfolio-maibu/static/js/main.f07dbca6.js.map",
+    "main.525e5ca0.css.map": "/Portfolio-maibu/static/css/main.525e5ca0.css.map",
+    "main.96445af8.js.map": "/Portfolio-maibu/static/js/main.96445af8.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio-maibu/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f899b327.css",
-    "static/js/main.f07dbca6.js"
+    "static/css/main.525e5ca0.css",
+    "static/js/main.96445af8.js"
   ]
 }
