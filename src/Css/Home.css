@@ -214,7 +214,8 @@
 } */
 
 .home {
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  /* background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); */
+  background: transparent;
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -244,6 +245,7 @@
   color: #ffffff;
   margin: 2rem auto;
   position: relative;
+  z-index: 2;
 }
 
 .intro:hover {
@@ -425,6 +427,8 @@
   overflow: hidden;
   background: rgba(26, 26, 26, 0.95);
   backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2;
 }
 
 .tabs {

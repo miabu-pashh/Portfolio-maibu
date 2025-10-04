@@ -9,6 +9,7 @@ import ResumeBuilder from "./Projects/ResumeBuilder";
 import ElearningPlatform from "./Projects/ELearningPlatform"; // ADD
 import DigitalResume from "./Projects/DigitalResume"; // ADD
 import StudentCRMDashboard from "./Projects/StudentCRMDashboard"; // ADD
+import StarfieldBackground from "./StarfieldBackground"; // ADD THIS
 
 import { MemoryRouter, Routes, Route } from "react-router-dom"; // ADD
 
@@ -48,6 +49,7 @@ function Home() {
   };
   return (
     <div className="home">
+      <StarfieldBackground /> {/* ADD THIS */}
       <div className="intro">
         <img src={maibu} alt="maibu" />
         <div className="intro-text">
@@ -55,7 +57,6 @@ function Home() {
           <p>Masters in Software Engineering</p>
         </div>
       </div>
-
       <div className="tab-content-container">
         <div className="tabs">
           <button
