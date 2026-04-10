@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-maibu/static/css/main.ca4e3558.css",
-    "main.js": "/Portfolio-maibu/static/js/main.66ca75e5.js",
+    "main.css": "/Portfolio-maibu/static/css/main.31e05680.css",
+    "main.js": "/Portfolio-maibu/static/js/main.52756428.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio-maibu/static/js/453.1407b060.chunk.js",
     "static/media/ResumeBuilderThumbnail.png": "/Portfolio-maibu/static/media/ResumeBuilderThumbnail.acf3cb804dc4608bb7e5.png",
     "static/media/ArchELearning.png": "/Portfolio-maibu/static/media/ArchELearning.2501a55a7112c274ea73.png",
@@ -9,14 +9,18 @@
     "static/media/eLearning2.png": "/Portfolio-maibu/static/media/eLearning2.1dbf1df93b58d997673a.png",
     "static/media/eLearning1.png": "/Portfolio-maibu/static/media/eLearning1.2c1b203d842cac81786d.png",
     "static/media/StudentCRMDashboard.png": "/Portfolio-maibu/static/media/StudentCRMDashboard.4a38a31300648752ad48.png",
+    "static/media/SluOpenSource.png": "/Portfolio-maibu/static/media/SluOpenSource.33c513015fde84ffd271.png",
     "static/media/digiresume.jpeg": "/Portfolio-maibu/static/media/digiresume.f77c597a9e9687807c68.jpeg",
+    "static/media/Nagarro_Logo.jpg": "/Portfolio-maibu/static/media/Nagarro_Logo.cd49dde73c1d7431315b.jpg",
+    "static/media/Its your Birthday Logo.png": "/Portfolio-maibu/static/media/Its your Birthday Logo.fa51afe0370f60390457.png",
+    "static/media/BHNA Logo.jpeg": "/Portfolio-maibu/static/media/BHNA Logo.6c1bd96e7d387ef5030f.jpeg",
     "index.html": "/Portfolio-maibu/index.html",
-    "main.ca4e3558.css.map": "/Portfolio-maibu/static/css/main.ca4e3558.css.map",
-    "main.66ca75e5.js.map": "/Portfolio-maibu/static/js/main.66ca75e5.js.map",
+    "main.31e05680.css.map": "/Portfolio-maibu/static/css/main.31e05680.css.map",
+    "main.52756428.js.map": "/Portfolio-maibu/static/js/main.52756428.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio-maibu/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca4e3558.css",
-    "static/js/main.66ca75e5.js"
+    "static/css/main.31e05680.css",
+    "static/js/main.52756428.js"
   ]
 }
