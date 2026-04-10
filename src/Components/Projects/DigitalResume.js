@@ -87,24 +87,6 @@ function DigitalResume() {
         </ul>
       </div>
 
-      <div className="projects-demo">
-        <h3>🔗 Demo & Code</h3>
-        <ul>
-          <li>
-            <strong>GitHub:</strong>{" "}
-            <a href={project?.github} target="_blank" rel="noopener noreferrer">
-              {project?.github}
-            </a>
-          </li>
-          <li>
-            <strong>Live Demo:</strong>{" "}
-            <a href={project?.demo} target="_blank" rel="noopener noreferrer">
-              {project?.demo}
-            </a>
-          </li>
-        </ul>
-      </div>
-
       <button className="back-button" onClick={() => navigate("/")}>
         ← Back to Projects
       </button>

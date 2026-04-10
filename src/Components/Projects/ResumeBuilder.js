@@ -8,8 +8,6 @@ function ResumeBuilder() {
   const navigate = useNavigate();
   const project = state?.project;
 
-  const [showPreview, setShowPreview] = React.useState(false);
-
   return (
     <div className="projects-container">
       <h2 className="projects-title">{project?.title || "Resume Tailor"}</h2>

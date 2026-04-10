@@ -10,8 +10,8 @@ function Footer() {
             <strong>Contact Mahaboob Pasha Mohammad</strong>
           </p>
 
-          <a href="mailto:mahaboobpashamohammad1@gmail.com">
-            <FaEnvelope /> mahaboobpashamohammad1@gmail.com
+          <a href="mailto:mdmaibubpasha@gmail.com">
+            <FaEnvelope /> mdmaibubpasha@gmail.com
           </a>
           <a href="tel:+13143056056">
             <FaPhone /> +1(314)-305-6056
@@ -38,8 +38,8 @@ function Footer() {
           <p>
             <strong>Address</strong>
           </p>
-          <p>117 Holleman Dr W Apt 2201 C</p>
-          <p> College Station, TX 77840</p>
+
+          <p> St Louis, MO </p>
         </div>
       </div>
     </footer>

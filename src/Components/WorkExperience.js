@@ -1,253 +1,341 @@
 import React from "react";
 import "../Css/WorkExperience.css";
-import { FaMapMarkerAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
+import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
+import caLogo from "../logos/Calogo.png";
+import bhnaLogo from "../logos/BHNA Logo.jpeg";
+import sluLogo from "../logos/SluOpenSource.png";
+import excelerateLogo from "../logos/ExcelerateLogo.jpeg";
+import birthdayLogo from "../logos/Its your Birthday Logo.png";
+import nagarroLogo from "../logos/Nagarro_Logo.jpg";
+import nithyaLogo from "../logos/nithya_industries_logo.jpeg";
 
-function WorkExperience() {
-  const experiences = [
-    {
-      id: 1,
-      company: "Upcancer",
-      position: "Backend Developer",
-      duration: "Sep 2025 - Present",
-      location: "Atlanta, GA · Remote",
-      logo: "https://www.upcancer.org/x/cdn/?https://storage.googleapis.com/wzukusers/user-28366453/images/5cacd50adc3c37Zurfki/Up-Cancer-new-logo_d200.png",
-      type: "current",
-      achievements: [
-        "Developed and deployed scalable backend services using Java, Spring Boot, and AWS to support the company’s new CRM platform",
-        "improving data processing speed by 30% and reducing API response time by 25%.",
-        "Collaborated with front-end teams to integrate React-based UI with backend microservices, enabling seamless customer data management",
-        "increasing internal user efficiency by 20% through automation of manual workflows.",
-        "Created responsive UIs with React.js, HTML/CSS, improving UX and compatibility.",
-      ],
-      techStack: [
-        "Next.JS",
-        "Java",
-        "Spring Boot",
-        "React.js",
-        "Dynamo DB",
-        "AWS",
-        "Microservices",
-      ],
-    },
-    {
-      id: 2,
-      company: "MetLife",
-      position: "Software Engineer",
-      duration: "Aug 2024 – March 2025",
-      location: "St. Louis, Missouri · Remote",
-      logo: "https://cdn.prod.website-files.com/645468eba93097253a052ac0/65370b2a3e0a4251b599ca48_Metlife.png",
-      type: "Contract",
-      achievements: [
-        "Implemented Agile methodologies to streamline SDLC and accelerate project delivery",
-        "Developed high-performance web apps using Java, Spring Boot, and Microservices",
-        "Created responsive UIs with React.js, Angular, HTML/CSS, improving UX and compatibility",
-        "Architected AWS cloud solutions reducing infrastructure cost by 20%",
-      ],
-      techStack: ["Java", "Spring Boot", "React.js", "Angular", "AWS"],
-    },
-    {
-      id: 3,
-      company: "Botanical Heights Neighborhood Association",
-      position: "Software Developer",
-      duration: "Feb 2024 – Apr 2024",
-      location: "St. Louis, Missouri · Remote",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfkMUTCaQ28XhwO4UUi9yOhii4PbuogfDMg&s",
-      type: "Internship",
-      description:
-        "Built the website using HCI principles to boost usability and increase visits by 80%.",
-      techStack: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
-    },
-    {
-      id: 4,
-      company: "SLU Open Source",
-      position: "Software Developer",
-      duration: "Aug 2024 – Dec 2024",
-      location: "St. Louis, Missouri · Remote",
-      logo: "https://oss-slu.github.io/img/oss-logo-2.png",
-      type: "academic",
-      description:
-        "Developed Web application to track and improve the donor details and donation tracking. Enhanced the donation tracking by 100%",
-      techStack: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "Prisma ORM",
-        "Express.js",
-        "AWS",
-        "GitHub Actions",
-        "Vercel",
-        "Postman",
-        "Figma",
-        "Jira",
-      ],
-    },
-    {
-      id: 5,
-      company: "Excelerate",
-      position: "Software Developer Intern",
-      duration: "Aug 2023 – Sep 2023",
-      location: "St. Louis, Missouri · Remote",
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQFsKCE82AoD_Q/company-logo_200_200/company-logo_200_200/0/1689287580187?e=2147483647&v=beta&t=W_EKhWW8gfHFEjEIWRFYG9DX28ca8kKEzSBitQcL7Qo",
-      type: "internship",
-      description:
-        "Created visual data stories and developed visual thinking skills for effective sponsor communication.",
-      techStack: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
-    },
-    {
-      id: 6,
-      company: "It's Your Birthday Inc.",
-      position: "Software Developer",
-      duration: "Jul 2023 – Sep 2023",
-      location: "St. Louis, Missouri · Remote",
-      logo: "https://static.wixstatic.com/media/6ef38d_b0983c6a79cc48f790ae003c66add6eb~mv2.png/v1/fit/w_2500,h_1330,al_c/6ef38d_b0983c6a79cc48f790ae003c66add6eb~mv2.png",
-      type: "Internship",
-      description:
-        "Developed a React app to manage shelter birthday celebrations, enabling admin functionality for organizers.",
-      techStack: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
-    },
-    {
-      id: 7,
-      company: "Nagarro",
-      position: "Java Full Stack Developer",
-      duration: "Nov 2021 – Dec 2022",
-      location: "Gurgaon, India",
-      logo: "https://yt3.googleusercontent.com/UcqU2VQcIy5UPcJ2c-Mu9b-0mScPXjBKVVLuCV2wU3PTowJf2UbY_8u_k6QJHo9edMSIcWlWrQ=s900-c-k-c0x00ffffff-no-rj",
-      type: "professional",
-      achievements: [
-        `Banking, Financial Services, and Insurance (BFSI): lead for this team and implemented REST APIs for seamless
-communication between front-end (React) and back-end (Java) for real-time chat communication for the banking domain
-website to reduce the confusion among new customers visiting the website, improving app efficiency by 75%.`,
-        `Mendix Development : Collaborated on Siemens web portal using Mendix and Java, achieving a 80% reduction in
-development time and streamlined backend enhancements`,
-      ],
-      techStack: [
-        "Java",
-        "JavaScript",
-        "React",
-        "Angular",
-        "MySQL",
-        "Jenkins",
-        "Postman",
-        "Git",
-        "AWS",
-        "Mendix",
-      ],
-    },
-    {
-      id: 8,
-      company: "Nagarro",
-      position: "Software Engineer Intern",
-      duration: "Aug 2021 – Nov 2021",
-      location: "Gurgaon, India",
-      logo: "https://yt3.googleusercontent.com/UcqU2VQcIy5UPcJ2c-Mu9b-0mScPXjBKVVLuCV2wU3PTowJf2UbY_8u_k6QJHo9edMSIcWlWrQ=s900-c-k-c0x00ffffff-no-rj",
-      type: "internship",
-      achievements: [
-        "Trained in Java and Advanced Java, Spring Boot and front-end tools like React and Angular",
-        "Built several CRUD apps and an exit flow for shopping cart websites",
-      ],
-      techStack: [
-        "Java",
-        "Advanced Java",
-        "SQL",
-        "Spring Boot",
-        "React",
-        "Angular",
-      ],
-    },
-    {
-      id: 9,
-      company: "Nithya Industries",
-      position: "Co-Founder",
-      duration: "Apr 2021 – Dec 2022",
-      location: "Hyderabad, India",
-      logo: "https://media.licdn.com/dms/image/v2/C560BAQG5Taar917i3w/company-logo_100_100/company-logo_100_100/0/1661858562785/nithya_industries_logo?e=1761782400&v=beta&t=69DfWnA-0rRlOzGIt_iWgHjE8Tk6cAs_JL_aEy9eqdM",
-      type: "Co-Founder",
-      achievements: [
-        "Designed and marketed pipeline valves as design and marketing coordinator",
-        "Developed catalogs and drove offline marketing strategies to grow client base",
-      ],
-    },
-    {
-      id: 10,
-      company: "Adons Soft Tech",
-      position: "Software Engineer",
-      duration: "Jan 2020 – Aug 2021",
-      location: "Hyderabad, India",
-      logo: "https://adonssoftech.com/images/adons_logo.png",
-      type: "professional",
-      achievements: [
-        "Led Waterfall model implementations with phase-wise delivery milestones",
-        "Built Java backends with JSP/Servlets and optimized Spring performance",
-        "Designed responsive UIs to increase user traffic by 20%",
-        "Managed data in MongoDB for high-performance querying",
-      ],
-      techStack: ["Java", "JSP", "Servlets", "Spring", "MongoDB"],
-    },
-  ];
+const experiences = [
+  {
+    id: 101,
+    company: "Mango Social Marketing",
+    companyDetail: "DBA Bucket List Creative",
+    position: "Lead Web Developer",
+    duration: "Nov 2025 - Present",
+    location: "St. Louis, MO",
+    logo: null,
+    type: "current",
+    summary:
+      "Leading full-stack delivery for client platforms, infrastructure, and reporting automation.",
+    achievements: [
+      "Architect scalable CMS and custom web systems with modular UI and backend integrations.",
+      "Manage Cloudflare, SSL/TLS, hosting, and deployment performance for stable production delivery.",
+      "Build automation utilities that generate documents and recurring stakeholder reports.",
+    ],
+    techStack: [
+      "React.js",
+      "WordPress",
+      "Cloudflare",
+      "Cloudways",
+      "DNS",
+      "SSL/TLS",
+      "Automation Tools",
+    ],
+  },
+  {
+    id: 1,
+    company: "Centennial Arts",
+    position: "Software Engineer",
+    duration: "Oct 2025 - Nov 2025",
+    location: "Bryan, TX",
+    logo: caLogo,
+    type: "recent",
+    summary:
+      "Delivered internal and client-facing web solutions while supporting Atlassian-based delivery workflows.",
+    achievements: [
+      "Built and maintained web applications with HTML, CSS, JavaScript, PHP, and MySQL.",
+      "Configured Jira and Confluence workflows, permissions, and project structures.",
+      "Documented standards and deployment procedures to improve onboarding and knowledge transfer.",
+    ],
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "Jira",
+      "Confluence",
+    ],
+  },
+  {
+    id: 2,
+    company: "Upcancer",
+    position: "Backend Developer",
+    duration: "Sep 2025 - Oct 2025",
+    location: "Atlanta, GA · Remote",
+    logo: null,
+    type: "contract",
+    typeLabel: "Part-time",
+    summary:
+      "Built backend services and React integrations to support CRM workflows and operational efficiency.",
+    achievements: [
+      "Improved data processing speed and API response time through Java, Spring Boot, and AWS services.",
+      "Integrated React frontends with backend microservices for smoother customer data management.",
+      "Delivered responsive interfaces that improved usability across devices.",
+    ],
+    techStack: [
+      "Next.js",
+      "Java",
+      "Spring Boot",
+      "React.js",
+      "DynamoDB",
+      "AWS",
+      "Microservices",
+    ],
+  },
+  {
+    id: 102,
+    company: "Velor Pathways LLC",
+    position: "Junior Java Developer Intern",
+    duration: "Feb 2025 - Oct 2025",
+    location: "Houston, TX",
+    logo: null,
+    type: "professional",
+    summary:
+      "Contributed to backend feature delivery, REST APIs, persistence layers, and testing in Agile sprints.",
+    achievements: [
+      "Developed Java and Spring Boot services across feature implementation and support work.",
+      "Built CRUD flows and REST APIs with MySQL and PostgreSQL integration.",
+      "Improved quality with JUnit, Mockito, and Git-based team collaboration.",
+    ],
+    techStack: [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "Maven",
+      "REST APIs",
+      "MySQL",
+      "PostgreSQL",
+      "JUnit",
+      "Mockito",
+    ],
+  },
+  {
+    id: 3,
+    company: "Botanical Heights Neighborhood Association",
+    position: "Software Developer",
+    duration: "Feb 2024 - Apr 2024",
+    location: "St. Louis, MO · Remote",
+    logo: bhnaLogo,
+    type: "internship",
+    summary:
+      "Built a usability-focused website using HCI principles and improved engagement significantly.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
+  },
+  {
+    id: 4,
+    company: "SLU Open Source",
+    position: "Software Developer",
+    duration: "Aug 2024 - Dec 2024",
+    location: "St. Louis, MO · Remote",
+    logo: sluLogo,
+    type: "academic",
+    summary:
+      "Developed a donor management application and improved donation tracking workflows.",
+    techStack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Prisma ORM",
+      "Express.js",
+      "AWS",
+      "Vercel",
+      "Jira",
+    ],
+  },
+  {
+    id: 5,
+    company: "Excelerate",
+    position: "Software Developer Intern",
+    duration: "Aug 2023 - Sep 2023",
+    location: "St. Louis, MO · Remote",
+    logo: excelerateLogo,
+    type: "internship",
+    summary:
+      "Created visual data stories and sponsor-ready artifacts with a strong communication focus.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
+  },
+  {
+    id: 6,
+    company: "It's Your Birthday Inc.",
+    position: "Software Developer",
+    duration: "Jul 2023 - Sep 2023",
+    location: "St. Louis, MO · Remote",
+    logo: birthdayLogo,
+    type: "internship",
+    summary:
+      "Built a React-based admin interface to support shelter birthday celebration workflows.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
+  },
+  {
+    id: 7,
+    company: "Nagarro",
+    position: "Java Full Stack Developer",
+    duration: "Nov 2021 - Dec 2022",
+    location: "Gurgaon, India",
+    logo: nagarroLogo,
+    type: "professional",
+    summary:
+      "Delivered enterprise web features across BFSI and Siemens projects using Java, React, and Mendix.",
+    achievements: [
+      "Built REST APIs and real-time chat capabilities for banking workflows.",
+      "Contributed to Siemens web portal delivery with Mendix and Java-based backend enhancements.",
+    ],
+    techStack: [
+      "Java",
+      "JavaScript",
+      "React",
+      "Angular",
+      "MySQL",
+      "Jenkins",
+      "AWS",
+      "Mendix",
+    ],
+  },
+  {
+    id: 8,
+    company: "Nagarro",
+    position: "Software Engineer Intern",
+    duration: "Aug 2021 - Nov 2021",
+    location: "Gurgaon, India",
+    logo: nagarroLogo,
+    type: "internship",
+    summary:
+      "Completed full-stack engineering training and built multiple CRUD and commerce-related applications.",
+    techStack: [
+      "Java",
+      "Advanced Java",
+      "SQL",
+      "Spring Boot",
+      "React",
+      "Angular",
+    ],
+  },
+  {
+    id: 9,
+    company: "Nithya Industries",
+    position: "Co-Founder",
+    duration: "Apr 2021 - Dec 2022",
+    location: "Hyderabad, India",
+    logo: nithyaLogo,
+    type: "entrepreneurship",
+    summary:
+      "Handled product design coordination, marketing assets, and offline business growth efforts.",
+    achievements: [
+      "Designed and marketed pipeline valves with a product and operations mindset.",
+      "Built catalogs and coordinated offline marketing strategies to grow the client base.",
+    ],
+    techStack: ["Product Design", "Marketing", "Operations", "Catalog Design"],
+  },
+];
 
-  const getTypeLabel = (type) => {
-    const labels = {
-      current: "Current",
-      recent: "Recent",
-      professional: "Full-time",
-      contract: "Contract",
-      internship: "Internship",
-      academic: "Academic",
-      entrepreneurship: "Entrepreneurship",
-    };
-    return labels[type] || type;
-  };
+const typeLabels = {
+  current: "Current",
+  recent: "Recent",
+  professional: "Full-time",
+  contract: "Contract",
+  internship: "Internship",
+  academic: "Academic",
+  entrepreneurship: "Entrepreneurship",
+};
 
-  const getTypeColor = (type) => {
-    const colors = {
-      current: "#00ff88",
-      recent: "#ffd700",
-      professional: "#4a9eff",
-      contract: "#ff6b6b",
-      internship: "#a78bfa",
-      academic: "#f59e0b",
-      entrepreneurship: "#ec4899",
-    };
-    return colors[type] || "#ffd700";
-  };
+const typeColors = {
+  current: "#00d084",
+  recent: "#ffd700",
+  professional: "#52a8ff",
+  contract: "#ff7b72",
+  internship: "#b28dff",
+  academic: "#f5a623",
+  entrepreneurship: "#ff5ea8",
+};
+
+function ExperienceLogo({ src, company }) {
+  const [errored, setErrored] = React.useState(false);
+  const initials = company
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
+
+  if (!src || errored) {
+    return <div className="experience-logo-fallback">{initials}</div>;
+  }
 
   return (
-    <div className="experience-section">
+    <img
+      src={src}
+      alt={`${company} logo`}
+      className="company-logo"
+      onError={() => setErrored(true)}
+    />
+  );
+}
+
+function WorkExperience() {
+  const summaryCards = [
+    { label: "Experience Entries", value: `${experiences.length}+` },
+    { label: "Current Focus", value: "Full-stack systems" },
+    { label: "Core Strength", value: "Web, backend, AI" },
+  ];
+
+  return (
+    <section className="experience-section">
       <p className="section-subtitle">My professional journey</p>
       <h2 className="section-title">Work Experience</h2>
+      <p className="experience-intro">
+        A progression across software engineering, client delivery, product
+        thinking, and hands-on implementation, with recent work centered on
+        production-grade web systems and modern full-stack delivery.
+      </p>
 
-      <div className="experience-timeline">
-        {experiences.map((exp, index) => (
-          <div key={exp.id} className={`experience-item ${exp.type}`}>
-            <div className="timeline-connector">
-              <div
-                className="timeline-dot"
-                style={{ backgroundColor: getTypeColor(exp.type) }}
-              ></div>
-              {index < experiences.length - 1 && (
-                <div className="timeline-line"></div>
-              )}
-            </div>
+      <div className="experience-summary-grid">
+        {summaryCards.map((card) => (
+          <div key={card.label} className="experience-summary-card">
+            <span>{card.label}</span>
+            <strong>{card.value}</strong>
+          </div>
+        ))}
+      </div>
 
-            <div className="experience-card">
-              <div className="card-header">
-                <div className="company-info">
+      <div className="experience-stack">
+        {experiences.map((exp) => {
+          const badgeLabel = exp.typeLabel || typeLabels[exp.type] || exp.type;
+          const accentColor = typeColors[exp.type] || "#ffd700";
+
+          return (
+            <article
+              key={exp.id}
+              className="experience-entry"
+              style={{ "--accent-color": accentColor }}
+            >
+              <div className="experience-entry-rail">
+                <span className="experience-entry-dot"></span>
+              </div>
+
+              <div className="experience-card">
+                <div className="experience-card-top">
                   <div className="company-logo-wrapper">
-                    <img
-                      src={exp.logo}
-                      alt={`${exp.company} logo`}
-                      className="company-logo"
-                    />
-                    <div
-                      className="type-badge"
-                      style={{ backgroundColor: getTypeColor(exp.type) }}
-                    >
-                      {getTypeLabel(exp.type)}
-                    </div>
+                    <ExperienceLogo src={exp.logo} company={exp.company} />
                   </div>
-                  <div className="company-details">
-                    <h3 className="company-name">{exp.company}</h3>
-                    <h4 className="position-title">{exp.position}</h4>
+
+                  <div className="experience-main">
+                    <div className="experience-heading-row">
+                      <div>
+                        <p className="experience-role">{exp.position}</p>
+                        <h3 className="company-name">{exp.company}</h3>
+                        {exp.companyDetail ? (
+                          <p className="company-detail">{exp.companyDetail}</p>
+                        ) : null}
+                      </div>
+                      <span className="type-badge">{badgeLabel}</span>
+                    </div>
+
                     <div className="meta-info">
                       <span className="duration">
                         <FaCalendarAlt /> {exp.duration}
@@ -256,44 +344,40 @@ development time and streamlined backend enhancements`,
                         <FaMapMarkerAlt /> {exp.location}
                       </span>
                     </div>
+
+                    <p className="experience-summary">{exp.summary}</p>
+
+                    {exp.achievements ? (
+                      <div className="achievements">
+                        <h5>Highlights</h5>
+                        <ul>
+                          {exp.achievements.map((achievement) => (
+                            <li key={achievement}>{achievement}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+
+                    {exp.techStack ? (
+                      <div className="tech-stack">
+                        <h5>Technologies</h5>
+                        <div className="tech-tags">
+                          {exp.techStack.map((tech) => (
+                            <span key={tech} className="tech-tag">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               </div>
-
-              <div className="card-content">
-                {exp.description && (
-                  <p className="description">{exp.description}</p>
-                )}
-
-                {exp.achievements && (
-                  <div className="achievements">
-                    <h5>Key Achievements:</h5>
-                    <ul>
-                      {exp.achievements.map((achievement, idx) => (
-                        <li key={idx}>{achievement}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {exp.techStack && (
-                  <div className="tech-stack">
-                    <h5>Technologies:</h5>
-                    <div className="tech-tags">
-                      {exp.techStack.map((tech, idx) => (
-                        <span key={idx} className="tech-tag">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+            </article>
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../Css/Home.css";
 import AboutMe from "./AboutMe";
-import Projects from "./Project";
 import WorkExperience from "./WorkExperience";
 import Contact from "./Contact";
 import ProjectDetails from "./ProjectDetails";
