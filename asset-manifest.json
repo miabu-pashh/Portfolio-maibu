@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-maibu/static/css/main.31e05680.css",
-    "main.js": "/Portfolio-maibu/static/js/main.52756428.js",
+    "main.js": "/Portfolio-maibu/static/js/main.a0b8b438.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio-maibu/static/js/453.1407b060.chunk.js",
     "static/media/ResumeBuilderThumbnail.png": "/Portfolio-maibu/static/media/ResumeBuilderThumbnail.acf3cb804dc4608bb7e5.png",
     "static/media/ArchELearning.png": "/Portfolio-maibu/static/media/ArchELearning.2501a55a7112c274ea73.png",
@@ -16,11 +16,11 @@
     "static/media/BHNA Logo.jpeg": "/Portfolio-maibu/static/media/BHNA Logo.6c1bd96e7d387ef5030f.jpeg",
     "index.html": "/Portfolio-maibu/index.html",
     "main.31e05680.css.map": "/Portfolio-maibu/static/css/main.31e05680.css.map",
-    "main.52756428.js.map": "/Portfolio-maibu/static/js/main.52756428.js.map",
+    "main.a0b8b438.js.map": "/Portfolio-maibu/static/js/main.a0b8b438.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio-maibu/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31e05680.css",
-    "static/js/main.52756428.js"
+    "static/js/main.a0b8b438.js"
   ]
 }
